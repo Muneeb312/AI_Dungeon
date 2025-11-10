@@ -1,0 +1,12 @@
+{
+  "location": "Ancient Chamber",
+  "inventory": [
+    "sword",
+    "inventory_list"
+  ],
+  "flags": {
+    "quest_started": true
+  },
+  "hp": 10,
+  "turns": 3
+}

@@ -1,0 +1,28 @@
+{
+  "SFW": true,
+  "MAX_PARAGRAPHS": 2,
+  "INVENTORY_LIMIT": 4,
+
+  "COMMANDS": ["say or do anything"],
+
+  "LOCKS": { "Ancient Gate": "found_gate_key" },
+
+  "QUEST": {
+    "name": "Escape the Forgotten Ruins",
+    "goal_flag": "escaped_ruins",
+    "intro": "You awaken in a crumbling underground ruin. Strange symbols glow faintly on the walls. Find a way out before it collapses."
+  },
+
+  "END_CONDITIONS": {
+    "WIN_ALL_FLAGS": ["escaped_ruins"],
+    "LOSE_ANY_FLAGS": ["hp_zero", "trapped_forever"],
+    "MAX_TURNS": 40
+  },
+
+  "START": {
+    "location": "Ancient Chamber",
+    "inventory": ["sword"],
+    "flags": {},
+    "hp": 10
+  }
+}
